@@ -1,0 +1,33 @@
+{% load staticfiles %}
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <meta name="theme-color" content="#563d7c">
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</html>
+<link rel="stylesheet" type = "text/css" href = "{% static 'questions/style.css' %}" />
+<link rel="stylesheet" type = "text/css" href = "{% static 'questions/bck.css' %}">
+<body>
+<hr>
+<hr>
+{% include "questions/header.html" %}
+<div class="jumbotron">
+      <div class="container">
+
+        {% block main_content %}
+        {% endblock %}
+
+      </div>
+    </div>
+{% include "questions/footer.html" %}
+</body>
